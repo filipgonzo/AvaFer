@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin: 1em;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.main {
+    background-image: url(../img/fondo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+
+    position: absolute;
+    width: 1440px;
+    height: 947.69px;
+    left: calc(50% - 1440px/2);
+    top: 130px;
+}
+
+.main h1 {
+    position: absolute;
+    width: 688px;
+    height: 76px;
+    left: 141px;
+    top: 656px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 38px;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+
+}
+
+.cuadroConsulta {
+    position: absolute;
+    width: 454px;
+    height: 721px;
+    right: 141px;
+    top: 154px;
+    background: #FFFFFF;
+}
+
+.info {
+    position: absolute;
+    width: 1440px;
+    height: 546px;
+    left: 0px;
+    top: 1090px;
+    left: calc(50% - 1440px/2);
+    background: #FFFFFF;
+}
+
+.tecnicoCapilar h3 {
+    position: absolute;
+    width: 571px;
+    height: 70px;
+    margin-left: 141px;
+    top: 67px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #000000;
+}
+
+.list {
+    position: absolute;
+    width: 571px;
+    height: 175px;
+    left: 141px;
+    top: 191px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    color: #000000;
+
+}
+
+.imagen {
+    position: relative;
+    width: 612px;
+    height: 408px;
+    left: 713px;
+    top: 113px;
+
+
+
+
+}
+
+.imagen img {
+    box-sizing: border-box;
+    position: absolute;
+    left: 141px;
+    border: 3px solid #000000;
+    width: 461px;
+    height: 311px;
+}
+
+footer {
+    position: absolute;
+    width: 1440px;
+    height: 130px;
+    left: calc(50% - 1440px/2);
+    top: 1606px;
+    vertical-align: bottom;
+    display: flex;
+    align-items: center;
+    background: #000000;
+}
+
+footer p {
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    /* identical to box height */
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    margin-left: 141px;
+}
+
+.contenedor {}
+
+.cuadroConsulta {
+    display: flex;
+}
+
+
+.cuadroConsulta h3 {
+    margin-top: 52px;
+    margin-left: 37px;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #000000;
+}
+
+.cuadroConsulta p {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    
+    color: #000000;
+}
