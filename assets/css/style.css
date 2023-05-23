@@ -13,10 +13,7 @@ nav {
 .main {
     background-image: url(../img/fondo.png);
     background-repeat: no-repeat;
-
     background-size: cover;
-
-
     position: absolute;
     width: 1440px;
     height: 947.69px;
@@ -261,9 +258,9 @@ small {
     display: none;
 }
 
-@media (max-width: 375px) {
+@media only screen and (min-width: 100px) and (max-width: 700px) {
     nav {
-        width: 357px;
+        width: 100%;
         margin: 0 !important;
         display: flex;
         align-items: center;
@@ -273,16 +270,19 @@ small {
 
     .main {
         background-image: url(../img/fondo.png);
-        width: 896px;
-
+        max-width: 100vw;
+        top: 10px;
+        left: 0px;
+        display: flex;
+        position: relative;
     }
 
 
     .main h1 {
-        position: absolute;
+
         width: 359px;
-        left: 540px;
-        top: 31px;
+        left: 12px;
+        top: 20px;
         font-family: 'Raleway';
         font-style: normal;
         font-weight: 600;
@@ -295,12 +295,12 @@ small {
 
 
     .cuadroConsulta {
-        position: absolute;
+        position: relative;
         width: 368px;
         height: 753px;
-        left: 529px;
+        left: 5px;
         top: 166px;
-        background: #FFFFFF ;
+        background: #FFFFFF;
         opacity: 0.8;
     }
 
@@ -446,11 +446,269 @@ small {
     }
 
     footer {
-        position: absolute;
-        width: 363px;
+        position: relative;
+        width: 100%;
         height: 130px;
         left: 0px;
-        top: 1817px;
+        top: 795px;
+        vertical-align: bottom;
+        display: flex;
+        align-items: center;
+        background: #000000;
+    }
+
+    footer p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        text-decoration-line: underline;
+        color: #FFFFFF;
+        margin-left: 141px;
+    }
+
+
+    small {
+        color: red;
+    }
+
+    #nombreCampo {
+        display: none;
+    }
+
+    #correoCampo {
+        display: none;
+    }
+
+    #telefonoCampo {
+        display: none;
+    }
+
+    #comunaCampo {
+        display: none;
+    }
+
+    #nombreCampo2 {
+        display: none;
+    }
+
+    #correoCampo2 {
+        display: none;
+    }
+
+    #telefonoCampo2 {
+        display: none;
+    }
+
+    #comunaCampo2 {
+        display: none;
+    }
+
+    #campoNombreSalon {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 710px) and (max-width: 1162px) {
+    nav {
+        width: 100vw !important;
+        margin: 0 !important;
+        display: flex;
+        align-items: center;
+    }
+
+
+    .main {
+        background-image: url(../img/fondo.png);
+        min-width: 1160px;
+        background-size: cover;
+        top: 10px;
+        left: 0px;
+        display: flex;
+        height: 909.69px;
+        position: relative
+    }
+
+
+
+    .main h1 {
+
+        width: 55%;
+        left: 45px;
+        top: 418px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 37px;
+        line-height: 38px;
+        color: #FFFFFF;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    }
+
+
+
+
+    .cuadroConsulta {
+        position: relative;
+        width: 368px;
+        height: 753px;
+        left: 80vw;
+        top: 56px;
+        background: #FFFFFF;
+        opacity: 0.8;
+    }
+
+    #contenido {
+        display: block;
+    }
+
+
+    #enviado {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: 100%;
+    }
+
+
+    #enviado img {
+        width: 91.05px;
+        height: 95px;
+    }
+
+
+    .cuadroConsulta h3 {
+        margin-top: 52px;
+        margin-left: 2px;
+        text-align: center;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 35px;
+
+        color: #000000;
+    }
+
+    .cuadroConsulta p {
+        margin-top: 20px;
+        text-align: center;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+    }
+
+    .check {
+        display: flex;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        flex-direction: column;
+    }
+
+    .form-check-input:checked {
+        background-color: #212529;
+        border-color: #212529;
+    }
+
+    .form-check-input:checked[type=radio] {
+        background-image: none;
+    }
+
+    /* tipo formularios*/
+
+    #formularioIndependiente {
+        margin: 1.5em;
+        display: none;
+    }
+
+    #formularioDuenhoSalon {
+        margin: 1.5em;
+        display: none;
+    }
+
+
+    /* boton formulario*/
+
+    .envioDatos {
+        width: 100%;
+    }
+
+
+
+    .info {
+        position: absolute;
+        width: 375px;
+        height: 546px;
+        top: 1090px;
+        left: calc(50% - 1440px/2);
+        background: #FFFFFF;
+    }
+
+    .tecnicoCapilar h3 {
+        position: relative;
+        width: 100vw;
+        height: 70px;
+        top: 33px;
+        text-align: center;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 29px;
+        line-height: 35px;
+        color: #000000;
+    }
+
+    .list {
+        position: absolute;
+        width: 354px;
+        height: 175px;
+        left: 245px;
+        top: 156px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 25px;
+        color: #000000
+    }
+
+
+
+    .imagen {
+        position: relative;
+        width: 375px;
+        height: 408px;
+        left: 393px;
+        top: 113px;
+
+    }
+
+    .imagen img {
+        box-sizing: border-box;
+        position: absolute;
+        left: 380px;
+        border: 3px solid #000000;
+        width: 350px;
+        height: 236px;
+    }
+
+
+    footer {
+        position: relative;
+        width: 100%;
+        height: 130px;
+        left: 0px;
+        top: 795px;
         vertical-align: bottom;
         display: flex;
         align-items: center;
