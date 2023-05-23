@@ -13,8 +13,8 @@ nav {
 .main {
     background-image: url(../img/fondo.png);
     background-repeat: no-repeat;
- 
-    background-size:  cover;
+
+    background-size: cover;
 
 
     position: absolute;
@@ -41,7 +41,7 @@ nav {
 }
 
 .cuadroConsulta {
-    
+
     position: absolute;
     width: 454px;
     height: 753px;
@@ -50,12 +50,12 @@ nav {
     background: #FFFFFF;
 }
 
-#contenido{
+#contenido {
     display: block;
 }
 
 
-#enviado{
+#enviado {
     display: none;
     flex-direction: column;
     justify-content: center;
@@ -65,7 +65,7 @@ nav {
 }
 
 
-#enviado img{
+#enviado img {
     width: 91.05px;
     height: 95px;
 }
@@ -73,14 +73,15 @@ nav {
 
 .cuadroConsulta h3 {
     margin-top: 52px;
-    text-align: center;
+    margin-left: 38px;
+    text-align: start;
     font-family: 'Raleway';
     font-style: normal;
     font-weight: 700;
     font-size: 30px;
     line-height: 35px;
-
     color: #000000;
+
 }
 
 .cuadroConsulta p {
@@ -91,8 +92,17 @@ nav {
     font-weight: 400;
     font-size: 21px;
     line-height: 25px;
-    
+
     color: #000000;
+}
+
+.check {
+
+
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
 }
 
 .form-check-input:checked {
@@ -101,17 +111,17 @@ nav {
 }
 
 .form-check-input:checked[type=radio] {
-    background-image: none ;
+    background-image: none;
 }
 
 /* tipo formularios*/
 
-#formularioIndependiente{
+#formularioIndependiente {
     margin: 1.5em;
     display: none;
 }
 
-#formularioDuenhoSalon{
+#formularioDuenhoSalon {
     margin: 1.5em;
     display: none;
 }
@@ -119,7 +129,7 @@ nav {
 
 /* boton formulario*/
 
-.envioDatos{
+.envioDatos {
     width: 100%;
 }
 
@@ -211,42 +221,293 @@ footer p {
 }
 
 
-small{
+small {
     color: red;
 }
 
-#nombreCampo{
+#nombreCampo {
     display: none;
 }
 
- #correoCampo{
+#correoCampo {
     display: none;
 }
 
- #telefonoCampo{
+#telefonoCampo {
     display: none;
 }
 
- #comunaCampo{
+#comunaCampo {
     display: none;
 }
 
-#nombreCampo2{
+#nombreCampo2 {
     display: none;
 }
 
- #correoCampo2{
+#correoCampo2 {
     display: none;
 }
 
- #telefonoCampo2{
+#telefonoCampo2 {
     display: none;
 }
 
- #comunaCampo2{
+#comunaCampo2 {
     display: none;
 }
 
- #campoNombreSalon{
+#campoNombreSalon {
     display: none;
- }
+}
+
+@media (max-width: 375px) {
+    nav {
+        width: 357px;
+        margin: 0 !important;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    .main {
+        background-image: url(../img/fondo.png);
+        width: 896px;
+
+    }
+
+
+    .main h1 {
+        position: absolute;
+        width: 359px;
+        left: 540px;
+        top: 31px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 23px;
+        line-height: 38px;
+        color: #FFFFFF;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+    }
+
+
+
+    .cuadroConsulta {
+        position: absolute;
+        width: 368px;
+        height: 753px;
+        left: 529px;
+        top: 166px;
+        background: #FFFFFF ;
+        opacity: 0.8;
+    }
+
+    #contenido {
+        display: block;
+    }
+
+
+    #enviado {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        height: 100%;
+    }
+
+
+    #enviado img {
+        width: 91.05px;
+        height: 95px;
+    }
+
+
+    .cuadroConsulta h3 {
+        margin-top: 52px;
+        margin-left: 2px;
+        text-align: center;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 35px;
+
+        color: #000000;
+    }
+
+    .cuadroConsulta p {
+        margin-top: 20px;
+        text-align: center;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+    }
+
+    .check {
+        display: flex;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        flex-direction: column;
+    }
+
+    .form-check-input:checked {
+        background-color: #212529;
+        border-color: #212529;
+    }
+
+    .form-check-input:checked[type=radio] {
+        background-image: none;
+    }
+
+    /* tipo formularios*/
+
+    #formularioIndependiente {
+        margin: 1.5em;
+        display: none;
+    }
+
+    #formularioDuenhoSalon {
+        margin: 1.5em;
+        display: none;
+    }
+
+
+    /* boton formulario*/
+
+    .envioDatos {
+        width: 100%;
+    }
+
+
+
+    .info {
+        position: absolute;
+        width: 375px;
+        height: 546px;
+        top: 1090px;
+        left: calc(50% - 1440px/2);
+        background: #FFFFFF;
+    }
+
+    .tecnicoCapilar h3 {
+        position: absolute;
+        width: 356px;
+        height: 70px;
+        top: 33px;
+        left: 398px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 29px;
+        line-height: 35px;
+        color: #000000;
+    }
+
+    .list {
+        position: absolute;
+        width: 354px;
+        height: 175px;
+        left: 537px;
+        top: 404px;
+        font-family: 'Raleway';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 17px;
+        line-height: 25px;
+        color: #000000;
+    }
+
+
+
+    .imagen {
+        position: relative;
+        width: 375px;
+        height: 408px;
+        left: 393px;
+        top: 113px;
+
+    }
+
+    .imagen img {
+        box-sizing: border-box;
+        position: absolute;
+        left: 147px;
+        border: 3px solid #000000;
+        width: 350px;
+        height: 236px;
+    }
+
+    footer {
+        position: absolute;
+        width: 363px;
+        height: 130px;
+        left: 0px;
+        top: 1817px;
+        vertical-align: bottom;
+        display: flex;
+        align-items: center;
+        background: #000000;
+    }
+
+    footer p {
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        /* identical to box height */
+        text-decoration-line: underline;
+        color: #FFFFFF;
+        margin-left: 141px;
+    }
+
+
+    small {
+        color: red;
+    }
+
+    #nombreCampo {
+        display: none;
+    }
+
+    #correoCampo {
+        display: none;
+    }
+
+    #telefonoCampo {
+        display: none;
+    }
+
+    #comunaCampo {
+        display: none;
+    }
+
+    #nombreCampo2 {
+        display: none;
+    }
+
+    #correoCampo2 {
+        display: none;
+    }
+
+    #telefonoCampo2 {
+        display: none;
+    }
+
+    #comunaCampo2 {
+        display: none;
+    }
+
+    #campoNombreSalon {
+        display: none;
+    }
+
+}
