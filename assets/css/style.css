@@ -60,11 +60,15 @@ nav {
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    align-items: center;
     height: 100%;
 }
 
 
-
+#enviado img{
+    width: 91.05px;
+    height: 95px;
+}
 
 
 .cuadroConsulta h3 {
