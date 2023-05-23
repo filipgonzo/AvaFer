@@ -13,8 +13,8 @@ nav {
 .main {
     background-image: url(../img/fondo.png);
     background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+ 
+    background-size:  cover;
 
 
     position: absolute;
@@ -41,13 +41,85 @@ nav {
 }
 
 .cuadroConsulta {
+    
     position: absolute;
     width: 454px;
-    height: 721px;
+    height: 753px;
     right: 141px;
     top: 154px;
     background: #FFFFFF;
 }
+
+#contenido{
+    display: block;
+}
+
+
+#enviado{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+}
+
+
+
+
+
+.cuadroConsulta h3 {
+    margin-top: 52px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 35px;
+
+    color: #000000;
+}
+
+.cuadroConsulta p {
+    margin-top: 20px;
+    text-align: center;
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 25px;
+    
+    color: #000000;
+}
+
+.form-check-input:checked {
+    background-color: #212529;
+    border-color: #212529;
+}
+
+.form-check-input:checked[type=radio] {
+    background-image: none ;
+}
+
+/* tipo formularios*/
+
+#formularioIndependiente{
+    margin: 1.5em;
+    display: none;
+}
+
+#formularioDuenhoSalon{
+    margin: 1.5em;
+    display: none;
+}
+
+
+/* boton formulario*/
+
+.envioDatos{
+    width: 100%;
+}
+
+
 
 .info {
     position: absolute;
@@ -134,31 +206,43 @@ footer p {
     margin-left: 141px;
 }
 
-.contenedor {}
 
-.cuadroConsulta {
-    display: flex;
+small{
+    color: red;
 }
 
-
-.cuadroConsulta h3 {
-    margin-top: 52px;
-    margin-left: 37px;
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 30px;
-    line-height: 35px;
-
-    color: #000000;
+#nombreCampo{
+    display: none;
 }
 
-.cuadroConsulta p {
-    font-family: 'Raleway';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 21px;
-    line-height: 25px;
-    
-    color: #000000;
+ #correoCampo{
+    display: none;
 }
+
+ #telefonoCampo{
+    display: none;
+}
+
+ #comunaCampo{
+    display: none;
+}
+
+#nombreCampo2{
+    display: none;
+}
+
+ #correoCampo2{
+    display: none;
+}
+
+ #telefonoCampo2{
+    display: none;
+}
+
+ #comunaCampo2{
+    display: none;
+}
+
+ #campoNombreSalon{
+    display: none;
+ }
